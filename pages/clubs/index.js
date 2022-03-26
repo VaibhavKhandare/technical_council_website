@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import Home from '../../components/Home/Home'
 const Clubs=()=>{
     const clubsIndex= [0,1,2,3,4]
     const clubs = ["Metis","Digis","mean Mechanics","Odyssey","Torque"]
@@ -22,7 +22,8 @@ const Clubs=()=>{
         <title>Clubs</title>
       </Head>
         <div>
-            {clubsIndex.map((i)=>{
+            <Home/>
+            {/* {clubsIndex.map((i)=>{
                 return(<>
                 <div>
                     <div>{clubs[i]}</div>
@@ -33,7 +34,7 @@ const Clubs=()=>{
 
                 </div>
                 </>)
-            })}
+            })} */}
             
         </div>
     </>)
